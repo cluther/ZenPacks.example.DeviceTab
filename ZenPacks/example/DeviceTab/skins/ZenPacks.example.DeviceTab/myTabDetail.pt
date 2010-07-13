@@ -1,0 +1,16 @@
+<tal:block metal:use-macro="here/templates/macros/page2">
+<tal:block metal:fill-slot="contentPane">
+
+<p>
+We can put whatever content we want here. Maybe a status indicator for any
+currently outstanding /Status/MyApp events on this device.
+</p>
+
+<br/>
+
+MyApp Status:
+<img border="0" tal:attributes="
+    src python:here.getStatusImgSrc(here.getStatus('/Status/MyApp'))"/>
+
+</tal:block>
+</tal:block>
